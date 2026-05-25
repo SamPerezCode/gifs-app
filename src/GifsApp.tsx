@@ -7,8 +7,8 @@ import { getGifsByQuery } from "./gifs/actions/get-gifs-by-query.action";
 import type { Gif } from "./gifs/interfaces/gif.interface";
 
 const GifsApp = () => {
-  const [previousTerms, setPreviousTerms] = useState<string[]>([]);
   const [gifs, setGifs] = useState<Gif[]>([]);
+  const [previousTerms, setPreviousTerms] = useState<string[]>([]);
 
   const handleTermClicked = (term: string) => {
     console.log({ term });
